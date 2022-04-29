@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" style="text-align: center; width: max-content;">
+        <caption><b>学生成绩单</b></caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>语文</th>
+                <th>数学</th>
+                <th>英语</th>
+                <th>总分</th>
+                <th>平均分</th>
+                <th>等级</th>
+            </tr>
+        </thead>
+        <tbody>
+            <?php foreach ($data as $key => $value) { ?>
+            <tr>
+                <td>
+                    <?php echo $value['name'] ?>
+                </td>
+                <td>
+                    <?php echo $value['chinese'] ?>
+                </td>
+                <td>
+                    <?php echo $value['math'] ?>
+                </td>
+                <td>
+                    <?php echo $value['english'] ?>
+                </td>
+                <td>
+                    <?php echo $value['total'] ?>
+                </td>
+                <td>
+                    <?php echo $value['average'] ?>
+                </td>
+                <td>
+                    <?php echo $value['level'] ?>
+                </td>
+            </tr>
+            <?php } ?>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="post" enctype="multipart/form-data">
+        <table border="1">
+            <tr>
+                <td>用户名</td>
+                <td><input type="text" name="username" placeholder="wang"></td>
+            </tr>
+            <tr>
+                <td>密码</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>头像</td>
+                <td><input type="file" name="avatar" multiple></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <input type="radio" name="1" checked>111
+                    <input type="radio" name="1">222
+                </td>
+            </tr>
+            <tr>
+                <td>爱好</td>
+                <td>
+                    <input type="checkbox">
+                    <input type="checkbox">
+                    <input type="checkbox">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="" onclick="alert()">
+        <input type="reset" value="重置">
+        <button type="button" onclick="alert()">按钮</button>
+        <select name="年级">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+    </form>
+
+</body>
+
+</html>
